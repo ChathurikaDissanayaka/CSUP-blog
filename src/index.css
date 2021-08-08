@@ -1,13 +1,162 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  background-color: lightgray;
+  font-family:'Courier New', Courier, monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container{
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-container a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.right-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 40%;
+}
+
+.right-menu a{
+  padding-left: 10px;
+}
+
+.right-menu img{
+  width: 51px;
+  height: 42px;
+}
+
+.left-menu{
+  margin-right: 10%;
+  float: right;
+  margin-left: auto;
+}
+
+.left-menu a{
+  padding-right: 10px;
+}
+
+.posts-tile{
+  background-color: white;
+  margin: 10px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.posts-tile:hover{
+  background-color:mintcream;
+}
+
+.posts-tile .top img{
+  border-radius: 5px;
+}
+
+.posts-tile .title{
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.posts-tile .writer{
+  font-size: 14px;
+}
+
+.posts-container{
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+button, .left-menu .button-container {
+  background-color:dodgerblue;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.add-post{
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.add-post form{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.add-post form label{
+  padding-top:20px;
+}
+
+.add-post form input, .add-post form textarea{
+  border: none;
+  border-bottom: dodgerblue 3px solid;
+  width: 50%;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  margin-top: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Courier New', Courier, monospace
+}
+
+button:hover{
+  background-color: steelblue;
+}
+
+.left-menu .button-container:hover{
+  background-color: steelblue;
+}
+
+.content{
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content img{
+  border-radius: 5px;
+}
+
+.delete{
+  background-color: red;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.delete:hover{
+  background-color: tomato;
 }
